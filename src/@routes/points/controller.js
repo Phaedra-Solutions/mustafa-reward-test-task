@@ -1,5 +1,6 @@
 const { handleError } = require('../../@shared/utils');
 const { points } = require('../../@services');
+
 /**
  * @description To get all points
  * @param {*} req 

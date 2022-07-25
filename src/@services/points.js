@@ -22,11 +22,9 @@ exports.getAll = () => {
           points: (points[transaction.name]?.points || 0) + calculatePoints(transaction)
         }
 
-        console.log("Month", moment(transaction.date).format('MMMM'));
         if (!pointsPerMonths[moment(transaction.date).format('MMMM')]) {
           pointsPerMonths[moment(transaction.date).format('MMMM')] = {}
         }
-
 
         // POINTS PER MONTH
         pointsPerMonths[moment(transaction.date).format('MMMM')][transaction.name] = {
