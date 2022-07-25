@@ -1,0 +1,3 @@
+exports = {
+  REWARDS_GET_ERROR: 'REWARDS_GET_ERROR'
+}
